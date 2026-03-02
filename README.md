@@ -6,7 +6,8 @@ A clean, modern web scraping application built with FastAPI and crawl4ai. Extrac
 
 - 🚀 FastAPI backend for high-performance async processing
 - 🤖 crawl4ai integration for intelligent content extraction
-- 🎨 Clean, modern UI with responsive design
+- 🎨 **Terminal-inspired dark UI** with monospace fonts and neon accents
+- 🔧 **Smart URL fixing** - automatically corrects malformed relative URLs
 - 📋 One-click copy to clipboard
 - ⚡ Real-time validation and error handling
 - 🎯 Removes navigation, footers, ads, and other clutter
