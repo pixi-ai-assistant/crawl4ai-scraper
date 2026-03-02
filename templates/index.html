@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraper - Extract Clean Content</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Web Scraper</h1>
+            <p class="subtitle">Extract clean text content from any URL</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <div class="input-group">
+                    <input 
+                        type="url" 
+                        id="urlInput" 
+                        placeholder="Enter URL to scrape (e.g., https://example.com)"
+                        required
+                    >
+                    <button id="scrapeBtn" class="btn-primary">
+                        <span class="btn-text">Scrape</span>
+                        <span class="spinner hidden"></span>
+                    </button>
+                </div>
+                <p class="hint">Enter a full URL including https://</p>
+            </section>
+
+            <section id="resultSection" class="result-section hidden">
+                <div class="result-header">
+                    <h2 id="resultTitle"></h2>
+                    <div class="result-actions">
+                        <button id="copyBtn" class="btn-secondary">Copy</button>
+                        <button id="clearBtn" class="btn-secondary">Clear</button>
+                    </div>
+                </div>
+                <div class="result-content">
+                    <pre id="resultText"></pre>
+                </div>
+                <div id="resultMeta" class="result-meta"></div>
+            </section>
+
+            <section id="errorSection" class="error-section hidden">
+                <div class="error-box">
+                    <span class="error-icon">⚠️</span>
+                    <p id="errorText"></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Powered by <a href="https://github.com/unclecode/crawl4ai" target="_blank">crawl4ai</a> + FastAPI</p>
+        </footer>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
